@@ -1,12 +1,16 @@
-:root {
+
+:root{
     --color-primario: rgb(79, 27, 80);
-    --color-alpha-primario: rgba(79, 27, 80, 0.75)
+    --color-alpha-primario: rgba(79, 27, 80, 0.75);
+
+    --color-texto: #ffffff;
+    --color-alpha-texto: rgba(255, 255, 255, 0.5);
 }
 
-* {
+
+
+*{
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
 }
 
 *::selection {
@@ -14,138 +18,90 @@
     color: rgb(255, 255, 255)
 }
 
-
-body {
+body{
     background-color: var(--color-primario);
 }
 
-
-.title {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.titulo{
+    color: var(--color-alpha-texto);
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-    padding: 10px;
-    color: rgba(255, 255, 255, 0.5);
 }
 
-.container {
-    width: 350px;
-    min-height: 50px;
-    height: auto;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    box-shadow: 0px 0px 3px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.password{
+    width: 250px;
+    height: 40px;
     word-break: break-all;
+    padding: 10px 15px;
+    word-break: break-all;
+    background-color: rgb(255, 255, 255);
     color: var(--color-alpha-primario);
-}
-
-.botones {
-    width: 300px;
-    height: 50px;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 0.75em;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    box-shadow: 0px 0px 3px 0px;
 }
 
-#generar {
+#boton-generar{
     width: 120px;
     height: 40px;
+    font-size: 1.1em;
+    font-weight: bold;
     background-color: var(--color-primario);
     color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
 }
 
-#generar:hover {
+#boton-generar:hover {
     background-color: rgb(255, 255, 255);
     color: var(--color-primario);
 }
 
-#generar:active {
+#boton-generar:active {
     transform: scale(0.98);
 }
 
-#copiar {
+#boton-copiar{
     width: 120px;
     height: 40px;
+    font-size: 1.1em;
+    font-weight: bold;
     background-color: rgba(255, 255, 255, 0.3);
     color: var(--color-alpha-primario);
     border-radius: 10px;
     border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
 }
 
-#copiar:hover {
+#boton-copiar:hover {
     background-color: rgb(255, 255, 255);
     color: var(--color-primario);
 }
 
-#copiar:active {
+#boton-copiar:active {
     transform: scale(0.98);
-}
-
-#copiado {
-    width: 150px;
-    height: 35px;
-    font-size: 0.6em;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-15%, -120%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px;
-    transition: 0.2s ease-out;
-    opacity: 0;
-}
-
-.triangulo {
-    width: 0;
-    height: 0;
-    top: -18px;
-    left: 70px;
-    position: absolute;
-    border-right: 10px solid transparent;
-    border-top: 10px solid transparent;
-    border-left: 10px solid transparent;
-    border-bottom: 10px solid rgb(255, 255, 255);
-    transition: 0.2 ease-in-out;
-
 }
 
 footer{
     border-top: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    width: 200px;
+    font-size: 2em;
     height: 70px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 30%);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    gap: 30px;
 
 }
 
@@ -158,22 +114,17 @@ i:hover{
     color: rgba(255, 255, 255, 0.5);
 }
 
+.modal-dialog{
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
 
-@media (max-width: 576px) {
+}
 
-    .title{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container{
-        width: 100%;
-        border-radius: 0px;
-    }
-
-    body{
-        overflow: hidden;
+@media (max-width: 250px){
+    .password{
+        width: auto;
+        height: auto;
     }
 }

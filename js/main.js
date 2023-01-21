@@ -1,9 +1,8 @@
 //Variables
 
-let container = document.getElementById("container");
-let generar = document.getElementById("generar");
-let copiar = document.getElementById("copiar");
-let copiado = document.getElementById("copiado");
+let container = document.getElementById("password");
+let generar = document.getElementById("boton-generar");
+let copiar = document.getElementById("boton-copiar");
 
 
 //Funciones
@@ -38,22 +37,20 @@ function generarPass() {
 
 };
 
-function globoCopiado(){
-    copiado.style.opacity = "1";
-    setTimeout(() => {
-        copiado.style.opacity = "0";
-    }, 1300);
+function copiarTexto() {
     copiar.innerText = "Copied";
     navigator.clipboard.writeText(container.innerText);
 };
 
+
+//Program
+
 generar.addEventListener("click", generarPass);
 
-copiar.addEventListener("click", function(){
-    if(container.innerText != ""){
-        globoCopiado();
+copiar.addEventListener("click", function () {
+    if (container.innerText != "") {
+        copiarTexto();
     }
 });
-
 
 
