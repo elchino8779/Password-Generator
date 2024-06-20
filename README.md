@@ -8,7 +8,7 @@
     <h3>✔️ Datos:</h3>
     <p>
         🔹 Proyecto creado con fines de practica <br>
-        🔹 Desarrollado en HTML, CSS, JavaScript y BootsTrap <br>
+        🔹 Desarrollado en HTML, CSS, JavaScript y BootStrap <br>
         🔹 Generador de password con letras y numeros
     </p>
 </div>
