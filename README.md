@@ -9,18 +9,18 @@
     <p>
         🔹 Proyecto creado con fines de practica <br>
         🔹 Desarrollado en HTML, CSS, JavaScript y BootStrap <br>
-        🔹 Generador de password con letras y numeros
+        🔹 Generador de password con letras y números
     </p>
 </div>
 
 ---
 
 <div id="caracteristicas">
-    <h3>⚙️ Caracteristicas:</h3>
+    <h3>⚙️ Características:</h3>
     <p>
-        🔸 Genera passwords aleatorios con letras y numeros de 17 caracteres<br>
-        🔸 Opcion de copiar o generar un nuevo password<br>
-        🔸 Totalmente resposivo utilizando mediaQuerys de BootStrap<br>
+        🔸 Genera passwords aleatorios con letras y números de 17 caracteres<br>
+        🔸 Opción de copiar o generar un nuevo password<br>
+        🔸 Totalmente responsivo utilizando mediaQuerys de BootStrap<br>
     </p>
 </div>
 
